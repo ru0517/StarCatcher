@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(160, 192, 55);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+#title-screen, #game-over-screen, #high-score-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+canvas {
+  background-color: #333;
+  border: 1px solid white;
+  display: block;
+  margin: auto;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+#game-controls button:hover,
+#title-screen button:hover {
+  background-color: rgb(52, 187, 42);
+}
+
+#game-controls button,
+#title-screen button {
+  background-color: rgb(22, 99, 22);
+  color: white;
+}
+
+#controls {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#sound-controls {
+  position: absolute; 
+  top: 10px; 
+  right: 10px; 
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+#sound-controls button {
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(22, 99, 22);
+  color: white;
+  transition: background-color 0.3s;
+}
+
+#sound-controls button:hover {
+  background-color: rgb(52, 187, 42);
+}
+
+
+
